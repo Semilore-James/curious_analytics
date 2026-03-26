@@ -85,7 +85,7 @@ app.get('/api/best-times', async (req, res) => {
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', token: IG_TOKEN ? 'set' : 'missing', ig_id: IG_USER_ID });
+  res.json({ status: 'ok', token: IG_TOKEN ? 'set' : 'missing' });
 });
 
 const PORT = process.env.PORT || 3000;
